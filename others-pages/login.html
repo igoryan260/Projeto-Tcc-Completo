@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos_css/_stylePrincipal.css">
+    <link rel="stylesheet" href="../estilos_css/tela_de_cadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7c25744412.js" crossorigin="anonymous"></script>
+    <title>ProveWeb - Cadastre-se ou efetue o login</title>
+</head>
+
+<body>
+    <!-- Menu  de  Navegação -->
+    <div class="nav-menu background">
+        <div class="width-delimited-100">
+            <div class="content-nav-menu">
+                <div class="logo">
+                    <img src="../images/Logo-ProveWeb.png" alt="logotipo" />
+                </div>
+                <nav class="menu-principal">
+
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./planos_serviços.html">Planos e Serviços</a></li>
+                        <li><a href="./sobreNos.html">Conheça-nos</a></li>
+                        <li><a href="./contat.html">Contato</a></li>
+                        <li><a href="./10daysfree.html" id="ten-days-free">10 dias GRÁTIS</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Fim do menu de navegação -->
+
+    <!-- Conteúdo principal-->
+
+    <div class="content">
+        <div class="container conteudo-principal">
+            <!-- Login -->
+            <div id="login" class="title-form-login title-form ">
+                <h1>login</h1>
+            </div>
+
+            <!-- Titulo do cadastro-->
+            <div id="cadastro" class="title-form-cadastro title-form active">
+                <h1>Cadastrar</h1>
+            </div>
+
+            <!-- Tela de cadastro -->
+            <div class="first-content">
+
+                <div id="conteudo-display-cadastro" class="">
+                    <!-- esta div abaixo é a imagem de um usuário como background-->
+                    <div class="img-login-sign">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <!-- Cadastro  -->
+                    <form class="form-cadastro form" method="post" action="./cadastro.php">
+                        <div class="inputs">
+                            <div>
+                                <label for="name">Nome</label><input type="text" name="nome" id="nome" autofocus>
+                            </div>
+                            <div>
+                                <label for="email">E-mail</label><input type="mail" name="email" id="email">
+                            </div>
+                            <div>
+                                <label for="password">Senha</label><input type="password" name="senha" id="password">
+                            </div>
+                            <div>
+                                <label for="confirm-password">Confirme a senha</label><input type="password" name="confirmar-senha" id="confirm-password">
+                            </div>
+                            <div>
+                                <label for="nascimento">Data de nascimento</label><input type="date" name="dataNascimento" id="nascimento">
+                            </div>
+                        </div>
+                        <button>Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Tela de login -->
+            <div class="second-content">
+
+
+
+                <div id="conteudo-display-login" class="desactive-content">
+                    <div class="img-login-sign">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <form class="form-login form" action="./login.php" method="post">
+                        <div class="inputs">
+
+                            <div>
+                                <label for="email">E-mail</label><input type="mail" name="email" id="email">
+                            </div>
+                            <div>
+                                <label for="password">Senha</label><input type="password" name="senha" id="password">
+                            </div>
+
+                        </div>
+                        <button><input type="submit" value="Fazer Login"></button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- Fim conteúdo principal-->
+
+    <!-- Rodapé-->
+    <footer>
+        <div class="top-background-footer">
+            <div class="content-footer">
+                <div class="icon-proveweb h2">
+                    <div class="img-icon">
+                        <figcaption>
+                            <img src="../images/Ícone-prove.png">
+                        </figcaption>
+                    </div>
+                    <div class="center icon-proveweb">
+                        <h2>
+                            ProveWeb
+                        </h2>
+                    </div>
+                </div>
+                <div id="links-footer">
+
+                    <ul class="links">
+                        <li><a href="./reclame.html">Reclame</a></li>
+                        <li><a href="./duvidas.html">Dúvidas</a></li>
+                        <li><a href="./sobreNos.html">Sobre nós</a></li>
+                        <li><a href="#">Cancelar Planos</a></li>
+                    </ul>
+                    <ul class="social-media">
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="bottom-background-footer">
+            <div class="content-bottom-footer content-footer">
+                <p>
+                    Produzido e Desenvolvido por &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Nome da equipe'
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/login.js"></script>
+
+</body>
+
+</html>
