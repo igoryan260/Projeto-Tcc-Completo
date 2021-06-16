@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../estilos_css/_contato.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7c25744412.js" crossorigin="anonymous"></script>
-    <title>Contato-ProveWeb</title>
+    <title>Contato ProveWeb</title>
 </head>
 
 <body>
@@ -63,31 +63,51 @@
             <div class="contat-links">
                 <ul>
                     <li>
-                        <a href="#">
-                            <i class="fas icon style-hover-link fa-mobile-alt">
-                        <i class="text-link-contat style-hover-link ">Ligue em um de nossos telefones ou celulares</i>
-                            </i>
-                        </a>
+                        <button id="button-tel">
+                        <i class="fas icon style-hover-link fa-mobile-alt">
+                            <i class="text-link-contat style-hover-link ">Ligue em um de nossos telefones ou celulares</i>
+                        </i> 
+                    </button>
+
+
                     </li>
                     <li>
-                        <a href="#">
+
+                        <button id="button-whatsapp">
                             <i class="style-hover-link  fab icon fa-whatsapp">
                                 <i class="text-link-contat style-hover-link ">Chame-nos no whatsapp</i>
                             </i>
-                        </a>
+                           </button>
+
                     </li>
                     <li>
-                        <a href="#">
-                            <i class="style-hover-link far icon fa-envelope">
-                            <i class="style-hover-link  text-link-contat">Mande-nos um e-mail</i>
-                            </i>
-                        </a>
+
+                        <button id="button-email">
+                                <i class="style-hover-link far icon fa-envelope">
+                                    <i class="style-hover-link  text-link-contat"><a href="mailto:provewebg@gmail.com">provewebg@gmail.com</a></i>
+                                    </i>
+                            </button>
+
                     </li>
                 </ul>
             </div>
         </div>
     </div>
     <!-- Fim central da página-->
+
+    <!-- Estas divs abaixo servem pra carregar na tela uma janela com os numeros, email ou alguma coisa referente ao contato desejado pelo cliente-->
+    <div id="contatosProveweb" class="display-none">
+        <div id="content-divContatos">
+            <div id="telefone">
+                <strong>Telefone:</strong>
+                <a href="tel:+5500000000">&#40;11&#41; 0000-0000</a><br/><br/> </strong><strong>Celular:</strong> <a href="tel:+55999999999">&#40;11&#41; 99999-9999</a>
+            </div>
+            <div id="whatsapp">
+                <a href="https://mywhats.net/proveweb">Opção 1</a>
+            </div>
+            <button id="btn-fecharModal">Fechar</button>
+        </div>
+    </div>
 
     <!-- Rodapé-->
     <footer>
@@ -134,11 +154,14 @@
         <div class="bottom-background-footer">
             <div class="content-bottom-footer content-footer">
                 <p>
-                    Produzido e Desenvolvido por &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Nome da equipe'
+                    Produzido e Desenvolvido por &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PROVEWEB
                 </p>
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript-->
+    <script src="../js/contatos.js"></script>
 
 </body>
 

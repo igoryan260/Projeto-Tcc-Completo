@@ -54,6 +54,12 @@
     position: relative;
 }
 
+.contat-links ul li button {
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -70,7 +76,11 @@ a {
     /*alinhamento dos icones com o texto*/
     align-items: center;
     display: flex;
+    width: max-content;
 }
+
+
+/*formatação do texto dos links*/
 
 .text-link-contat {
     font-style: normal;
@@ -78,14 +88,75 @@ a {
     font-size: 14pt;
     font-weight: 400;
     margin-left: 2rem;
+    line-height: 2.3;
 }
 
-.style-hover-link:hover {
+.text-link-contat a {
+    padding: 1rem 0 1rem 0;
+}
+
+.contat-links ul li button i:hover,
+.contat-links ul li button i a:hover {
     color: #4fafb7;
 }
 
 
 /*=========================================================*/
+
+
+/*posição das divs com opções de contato*/
+
+#contatosProveweb {
+    position: absolute;
+    height: 210%;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 25%;
+}
+
+#contatosProveweb div {
+    position: relative;
+    padding: 2rem;
+    background-color: white;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+}
+
+#contatosProveweb div,
+#contatosProveweb div a {
+    color: #898989;
+}
+
+
+/*estilos dos links*/
+
+#contatosProveweb div a:hover {
+    color: #f70;
+}
+
+
+/*button fechar janela modal*/
+
+#btn-fecharModal {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+
+/*sumir display*/
+
+.display-none {
+    display: none;
+}
 
 
 /*========================================================*/
