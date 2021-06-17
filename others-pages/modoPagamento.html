@@ -43,7 +43,7 @@
     <section>
 
         <div class="width-delimited-100">
-            <form class="">
+            <form class="" action="#" id="formPgmCartao">
 
                 <h1>MODO DE PAGAMENTO</h1>
 
@@ -52,27 +52,27 @@
 
                     <div class="meiosPagamento">
                         <div>
-                            <label for="elo"><img src="../../images/formModoPagento/elo.png" alt="elo"><br />elo</label>
+                            <label for="elo"><img src="../images/formModoPagento/elo.png" alt="elo"><br />elo</label>
                             <input type="radio" name="modoPagamento" id="elo">
                         </div>
 
                         <div>
-                            <label for="mastercard"><img src="../../images/formModoPagento/master.png" alt="Master Card"><br /> MasterCard</label>
+                            <label for="mastercard"><img src="../images/formModoPagento/master.png" alt="Master Card"><br /> MasterCard</label>
                             <input type="radio" name="modoPagamento" id="mastercard">
                         </div>
 
                         <div>
-                            <label for="visa"><img src="../../images/formModoPagento/visa.png" alt="Visa"><br />visa</label>
+                            <label for="visa"><img src="../images/formModoPagento/visa.png" alt="Visa"><br />visa</label>
                             <input type="radio" name="modoPagamento" id="visa">
                         </div>
 
                         <div>
-                            <label for="hipercard"><img src="../../images/formModoPagento/hipercard.png" alt="Hiper Card"><br />HiperCard</label>
+                            <label for="hipercard"><img src="../images/formModoPagento/hipercard.png" alt="Hiper Card"><br />HiperCard</label>
                             <input type="radio" name="modoPagamento" id="hipercard">
                         </div>
 
                         <div>
-                            <label for="boleto"><img src="../../images/formModoPagento/fatura.png" alt="Boleto"><br />Boleto</label>
+                            <label for="boleto"><img src="../images/formModoPagento/fatura.png" alt="Boleto"><br />Boleto</label>
                             <input type="radio" name="modoPagamento" id="boleto">
                         </div>
                     </div>
@@ -95,6 +95,7 @@
                                 <label for="validadeAnoCartao">&nbsp;ano&nbsp; </label> <input type="number" name="ano" value="validadeAnoCartao">
                             </div>
                         </div>
+                        <!-- Div dados do cartão-->
 
                         <div class="action">
 
@@ -111,10 +112,83 @@
                             </p>
                         </div>
                     </div>
+                    <!-- dados do cartão-->
 
                 </div>
 
             </form>
+            <!--Formulario dados do cartão-->
+
+            <form action="#" id="formPgmBoleto" class="display">
+
+                <h1>MODO DE PAGAMENTO</h1>
+
+                <div class="formWidth">
+                    <h2>Selecione cartão ou boleto</h2>
+
+                    <div class="meiosPagamento">
+                        <div>
+                            <label for="eloUm"><img src="../images/formModoPagento/elo.png" alt="elo"><br />elo</label>
+                            <input type="radio" name="modoPagamento" id="eloUm">
+                        </div>
+
+                        <div>
+                            <label for="mastercardUm"><img src="../images/formModoPagento/master.png" alt="Master Card"><br /> MasterCard</label>
+                            <input type="radio" name="modoPagamento" id="mastercardUm">
+                        </div>
+
+                        <div>
+                            <label for="visaUm"><img src="../images/formModoPagento/visa.png" alt="Visa"><br />visa</label>
+                            <input type="radio" name="modoPagamento" id="visaUm">
+                        </div>
+
+                        <div>
+                            <label for="hipercardUm"><img src="../images/formModoPagento/hipercard.png" alt="Hiper Card"><br />HiperCard</label>
+                            <input type="radio" name="modoPagamento" id="hipercardUm">
+                        </div>
+
+                        <div>
+                            <label for="boletoUm"><img src="../images/formModoPagento/fatura.png" alt="Boleto"><br />Boleto</label>
+                            <input type="radio" name="modoPagamento" id="boletoUm">
+                        </div>
+                    </div>
+
+                    <div class="dadosBoleto">
+                        <div id="dadosParaBoleto">
+                            <div>
+                                <label for="nomePagador"><b>Nome completo</b>&nbsp;&nbsp;</label><input type="text" name="nome" id="nomePagador">
+                            </div>
+
+                            <div>
+                                <label for="cpf"><br/><b>CPF &nbsp;</b></label><input type="number" name="numeroCpf" id="cpf">
+                            </div>
+
+                            <div>
+                                <label for="email"><br /><b>E-mail  &nbsp;</b></label> <input type="email" name="email" id="email">
+                            </div>
+                        </div>
+                        <!-- Div dados do boleto-->
+
+                        <div class="action">
+
+                            <input type="button" value="Finalizar" id="abrirModalBoleto">
+                            <input type="reset" value="Cancelar">
+                        </div>
+
+                        <div class="moreInformations">
+                            <p id="paragraphOne">
+                                Você escolheu o <i id="namePlan">Plano Parcial</i>, no valor de <i>R$ 149,99</i> e com os adicionais [...] aumentando o valor para <i>R$ 175,00</i>.
+                            </p>
+                            <p id="paragraphTwo">
+                                Entre em contato conosco para qualquer dúvida
+                            </p>
+                        </div>
+                    </div>
+                    <!-- dados do boleto-->
+
+                </div>
+            </form>
+            <!--formulario pagamento boleto-->
         </div>
     </section>
 
@@ -122,12 +196,21 @@
 
     <div class="modalConfirmation display" id="modal-display">
 
-        <div class="alertModal ">
+        <div class="alertModal" id="modalConfirmationCard">
             <p>
                 Pedido efetuado, assim que o pagamento for aprovado você será avisado por e-mail.
             </p>
             <button id="fecharModal">Fechar</button>
         </div>
+        <!--modal cartao-->
+
+        <div id="modalConfirmationBoleto" class="alertModal">
+            <p>
+                Pague o boleto e assim que ele for aprovado em até 2 dias úteis você será avisado por e-mail
+            </p>
+            <button id="fecharModalUm">Fechar</button>
+        </div>
+        <!-- modal boleto-->
 
     </div>
 
@@ -185,6 +268,10 @@
     </footer>
 
     <script src="../js/modalConfirmation.js"></script>
+
+    <!-- script para formularios-->
+
+    <script src="../js/modoPagBoleto.js"></script>
 
 </body>
 
