@@ -1,76 +1,23 @@
-var boletos = document.querySelector("#boleto");
-//variavel para abrir o formulario de boleto
+//variavel para abrir os formularios de pagamentos
 var formBoleto = document.querySelector("#formPgmBoleto");
-
-var elo = document.querySelector("#elo");
-var mastercard = document.querySelector("#mastercard");
-var visa = document.querySelector("#visa");
-var hipercard = document.querySelector("#hipercard");
-//variavel para abrir o formulario de cartao
 var formPgmCartao = document.querySelector("#formPgmCartao");
 
+//variavel btn para opcoes de pagamentos
+var btnCartao = document.querySelector("#btnPgmCartao");
+var btnBoleto = document.querySelector("#btnPgmBoleto");
 
-//repetição das mesmas variaveis, agora para o formulario dois
+//funcao para abrir os formulario a cada click nos botoes
 
-var boletosUm = document.querySelector("#boleto");
+btnCartao.addEventListener("click", function() {
+    formPgmCartao.className = "";
+    formBoleto.className = "display";
+});
 
-var eloUm = document.querySelector("#eloUm");
-var mastercardUm = document.querySelector("#mastercardUm");
-var visaUm = document.querySelector("#visaUm");
-var hipercardUm = document.querySelector("#hipercardUm");
-
-
-boletos.addEventListener("click", function() {
+btnBoleto.addEventListener("click", function() {
     formPgmCartao.className = "display";
-    formPgmBoleto.className = "";
+    formBoleto.className = "";
 });
 
-elo.addEventListener("click", function() {
-    formPgmBoleto.className = "display";
-    formPgmCartao.className = "";
-});
-
-mastercard.addEventListener("click", function() {
-    formPgmBoleto.className = "display";
-    formPgmCartao.className = "";
-});
-
-visa.addEventListener("click", function() {
-    formPgmBoleto.className = "display";
-    formPgmCartao.className = "";
-});
-
-hipercard.addEventListener("click", function() {
-    formPgmBoleto.className = "display";
-    formPgmCartao.className = "";
-});
-
-//repetindo açoes porque são "id's diferentes"
-
-boletosUm.addEventListener("click", function() {
-    formPgmCartao.className = "display";
-    formPgmBoleto.className = "";
-});
-
-eloUm.addEventListener("click", function() {
-    formPgmBoleto.className = "display";
-    formPgmCartao.className = "";
-});
-
-mastercardUm.addEventListener("click", function() {
-    formPgmBoleto.className = "display";
-    formPgmCartao.className = "";
-});
-
-visaUm.addEventListener("click", function() {
-    formPgmBoleto.className = "display";
-    formPgmCartao.className = "";
-});
-
-hipercardUm.addEventListener("click", function() {
-    formPgmBoleto.className = "display";
-    formPgmCartao.className = "";
-});
 
 //variavel para abrir o modal de confirmação pagamento do boleto
 

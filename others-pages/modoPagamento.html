@@ -43,9 +43,13 @@
     <section>
 
         <div class="width-delimited-100">
+            <h1>MODO DE PAGAMENTO</h1>
+            <div id="opcaoPagamento">
+                <button id="btnPgmCartao">Cartao</button>
+                <button id="btnPgmBoleto">Boleto &#40;à vista&#41;</button>
+            </div>
+            <!-- botões para abrir fomularios para pagamento-->
             <form class="" action="#" id="formPgmCartao">
-
-                <h1>MODO DE PAGAMENTO</h1>
 
                 <div class="formWidth">
                     <h2>Selecione cartão ou boleto</h2>
@@ -69,11 +73,6 @@
                         <div>
                             <label for="hipercard"><img src="../images/formModoPagento/hipercard.png" alt="Hiper Card"><br />HiperCard</label>
                             <input type="radio" name="modoPagamento" id="hipercard">
-                        </div>
-
-                        <div>
-                            <label for="boleto"><img src="../images/formModoPagento/fatura.png" alt="Boleto"><br />Boleto</label>
-                            <input type="radio" name="modoPagamento" id="boleto">
                         </div>
                     </div>
 
@@ -121,35 +120,13 @@
 
             <form action="#" id="formPgmBoleto" class="display">
 
-                <h1>MODO DE PAGAMENTO</h1>
-
                 <div class="formWidth">
                     <h2>Selecione cartão ou boleto</h2>
 
                     <div class="meiosPagamento">
                         <div>
-                            <label for="eloUm"><img src="../images/formModoPagento/elo.png" alt="elo"><br />elo</label>
-                            <input type="radio" name="modoPagamento" id="eloUm">
-                        </div>
-
-                        <div>
-                            <label for="mastercardUm"><img src="../images/formModoPagento/master.png" alt="Master Card"><br /> MasterCard</label>
-                            <input type="radio" name="modoPagamento" id="mastercardUm">
-                        </div>
-
-                        <div>
-                            <label for="visaUm"><img src="../images/formModoPagento/visa.png" alt="Visa"><br />visa</label>
-                            <input type="radio" name="modoPagamento" id="visaUm">
-                        </div>
-
-                        <div>
-                            <label for="hipercardUm"><img src="../images/formModoPagento/hipercard.png" alt="Hiper Card"><br />HiperCard</label>
-                            <input type="radio" name="modoPagamento" id="hipercardUm">
-                        </div>
-
-                        <div>
-                            <label for="boletoUm"><img src="../images/formModoPagento/fatura.png" alt="Boleto"><br />Boleto</label>
-                            <input type="radio" name="modoPagamento" id="boletoUm">
+                            <label for="boleto"><img src="../images/formModoPagento/fatura.png" alt="Boleto"><br />Boleto</label>
+                            <input type="radio" name="modoPagamentoBoleto" id="boleto">
                         </div>
                     </div>
 

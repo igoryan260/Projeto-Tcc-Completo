@@ -28,6 +28,42 @@ h2 {
 }
 
 
+/*estilos botoes */
+
+#opcaoPagamento {
+    display: flex;
+    height: 2rem;
+    width: max-content;
+    min-width: 200px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#opcaoPagamento button {
+    background: none;
+    border: none;
+    font-size: 12pt;
+    color: #f70;
+    line-height: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+    -ms-transition: .1s;
+    -o-transition: .1s;
+}
+
+#opcaoPagamento button:hover {
+    font-size: 13pt;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+    -ms-transition: .1s;
+    -o-transition: .1s;
+}
+
+
 /* Alinhamentos dos ícone radios*/
 
 .meiosPagamento {
@@ -76,20 +112,23 @@ h2 {
     font-size: 14pt;
 }
 
-.cardDatas div {
+.cardDatas div,
+#dadosParaBoleto div {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1.5rem 0;
 }
 
-.cardDatas label {
+.cardDatas label,
+#dadosParaBoleto label {
     flex-grow: 0;
     display: flex;
     width: max-content;
 }
 
-.cardDatas input {
+.cardDatas input,
+#dadosParaBoleto input {
     flex-grow: 1;
 }
 
